@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+ -  name: stripe
+    database: raw
+    loaded_at_field: "current_timestamp"
+
+    freshness:
+        warn_after: {count: 12, period: hour}
+        warn_after: {count: 12, period: hour}
+
+    tables:
+     -  name: payment

@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: customers
+  - name: dim_customers
     description: One record per customer
     columns:
       - name: customer_id
